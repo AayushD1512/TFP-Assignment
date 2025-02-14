@@ -1,0 +1,109 @@
+.btn-primary{
+    background-color: yellow;
+    display: block;
+    height: 80px;
+    width: 160px;
+    margin: 200px auto;
+    
+}
+
+/*For Hover and Active Pseudo Classes*/
+.btn-primary:hover{
+    background-color: black;
+    outline: 3px solid yellow ;
+    scale: 1.05;
+    color: white;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary:active{
+    background-color: green;
+    color: yellow;
+    scale: 0.8;
+    outline: 3px dashed magenta;
+    transition: all 100ms ease-in;
+}
+
+div{
+    margin: 35px auto;
+    height: 20px;
+    width: 250px;
+    
+    
+}
+.divB{
+    justify-items: center;
+
+}
+
+/* For Checked Pseudo Classes*/
+
+input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked{
+    outline: 4px solid magenta;
+}
+
+#terms-accepted{
+
+    visibility: hidden;
+}
+
+#terms-req:checked ~ #terms-accepted{
+    visibility: visible;
+    color: magenta;
+}
+
+#terms-req:checked ~label{
+    visibility: hidden;
+}
+#terms-req:checked{
+    visibility: hidden;
+}
+
+/*For Disabled Pseudo Classes*/
+
+.disableWala{
+    background-color: green;
+    color: white;
+    height: 70px;
+    width: 150px;
+    margin: 150px auto;
+    display: block;
+}
+
+.disableWala:disabled{
+    opacity: 0.53;
+    
+}
+.disableWala:hover{
+    scale: 1;
+    
+}
+.disableWala:active{
+    scale: 1;
+    cursor: not-allowed;
+}
+
+
+/*For link and visited Pseudo Classes*/
+a{
+   
+    margin-right: 10px;
+    color: magenta;
+}
+
+a:link{
+    /* text-decoration:blanchedalmond; */
+   background-color: bisque;
+   
+}
+
+a:visited{
+    background-color: lime;
+}

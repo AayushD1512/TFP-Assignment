@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes Example</title>
+    <link rel="stylesheet" href="./cssPseudoSelector.css">
+</head>
+<body>
+
+    <h1>CSS Pseudo-classes Example</h1>
+
+    <h2>List Items</h2>
+    <ul>
+        <li>First Child (Styled with :first-child)</li>
+        <li>Second Child</li>
+        <li>Third Child (Styled with :nth-child(3))</li>
+        <li>Fourth Child</li>
+        <li>Fifth Child (Styled with :nth-last-child(2))</li>
+        <li>Last Child (Styled with :last-child)</li>
+    </ul>
+
+    <h2>Only Child Example</h2>
+    <div>
+        <p>This paragraph is the only child of the div (Styled with :only-child).</p>
+    </div>
+
+    <div>
+        <p>This paragraph is the first child.</p>
+        <p>This paragraph is the second child.</p>
+    </div>
+
+    <h2>First of Type and Last of Type</h2>
+    <div class="type-example">
+        <p>This is the first paragraph (Styled with :first-of-type).</p>
+        <span>This is a span.</span>
+        <p>This is the second paragraph.</p>
+        <p>This is the last paragraph (Styled with :last-of-type).</p>
+    </div>
+
+    <h2>Nth of Type and Nth Last of Type</h2>
+    <div class="nth-type-example">
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph (Styled with :nth-of-type(2)).</p>
+        <p>This is the third paragraph.</p>
+        <p>This is the fourth paragraph (Styled with :nth-last-of-type(2)).</p>
+        <p>This is the fifth paragraph.</p>
+    </div>
+
+    <h2>Only of Type</h2>
+    <div class="only-of-type-example">
+        <p>This is the only paragraph in this div (Styled with :only-of-type).</p>
+        <span>This is a span.</span>
+    </div>
+
+</body>
+</html>

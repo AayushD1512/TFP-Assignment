@@ -1,0 +1,26 @@
+/*This is for the example of vh and px normal
+    what we got to know is that px will remain as it is irrespective of parent etc
+    'vh,vw' will be set according the the viewing are available and has nothing do with parent etc available space
+    % depends stricly on the availabel area of its parent element
+    
+*/
+.cssUnits{
+    background-color: yellow;
+    height: 350px;
+    width: 950px;
+    padding: 15px;
+    
+}
+
+.one{
+    background-color: magenta;
+    height: 120px;
+    width: 70%;
+}
+.two{
+    background-color: black;
+    height: 120px;
+    width: 70vw;
+    margin-top: 20px;
+
+}

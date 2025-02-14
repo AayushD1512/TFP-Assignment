@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 24px;
+}
+
+/*--> different types of usecases for width with pseudo elements-classes*/
+div{
+    background-color: orange;
+    padding: 24px;
+    margin: 24px;
+    width: fit-content;
+}
+
+p:first-child{
+    width: min-content;
+}
+
+/* div:first-of-type p{
+    background-color: black;
+    color: green;
+} */
+
+/* p:last-of-type{
+    color: magenta;
+} */
+
+/*--> using rgba where 'a' is alpha value to dictate the opacity of
+the color wherever it was used -- we can also use opacity that directly
+affects whole element as one*/
+p{
+    background-color: rgba(255, 255, 0, 0.6);
+    margin: 24px;
+    padding: 24px;
+    width: fit-content;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+p:hover{
+    transition: all 300ms ease-in-out;
+    background-color: rgb(12, 12, 12);
+    color: rgba(255, 255, 255, 1);
+    cursor: crosshair;
+}

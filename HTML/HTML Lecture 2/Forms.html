@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="./submit.html"">
+        <label>Name Of The User</label>
+        <input type="text" required autocomplete="off" placeholder="Name" name="user-name">
+        <br><br>
+        <label for="email-user">Email Of The User</label>
+        <input type="email" required autocomplete="on" placeholder="E-mail" name="email-user" id="email-user">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" value="21" >
+        <br><br>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+        <label for="tele">Telephone</label>
+        <input type="tel" placeholder="Telephone Number" name="tele" id="tele">
+        <br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="genderMale"> <label for="genderMale">Male</label>
+        <input type="radio" name="gender" id="genderFemale"> <label for="genderFemale">Female</label>
+        <br><br>
+        <label for="Hobby">Hobbies</label>
+        <br>
+        <input type="checkbox" name="Hobbies" id="football" value="football"> <label for="football">Football</label><br>
+        <input type="checkbox" name="Hobbies" id="VideoGames" value="videogame"> <label for="VideoGames">Video Games</label><br>
+        <input type="checkbox" name="Hobbies" id="Singing" value="singing"> <label for="Singing">Singing</label> <br><br>
+
+        <br>
+        <br><br>
+        <label for="user-city">Where do you live?</label>
+        <select name="user-city" id="user-city">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">mumbai</option>
+            <option value="vns" selected>Varanasi</option>
+            <option value="goa">Goa</option>
+        </select>
+        <br><br>
+        <label for="feedback">Do you have any Feedback/Doubt? </label><br>
+        <textarea name="feedback" id="feedback" rows="20" cols="50" placeholder="Feedback...."></textarea>
+        <br><br>
+        <label for="rate">How do you rate us?</label>
+        <input type="range" name="rate" id="rate" minlength="0" max="10" step="2">
+        <br><br>
+        <input type="submit">  
+        <input type="reset">
+    </form>
+
+    <!-- 
+
+    "for" tag in label is used to associate with corresponding input type as for and id value shall be same.
+    writing "name" inside a input acts as key in key:value pair ==> where values is given by the user
+    Radio option shall have same "name" as label "for"
+    Wherever you see "value" whether given by us or given by the user that data goes to the backend
+    "checked" attribute is used when you want to pre-select an option, "disabled" is when you dont want the field to be changed by a user
+    If you write novalidate inside form tag above no required field will work
+    Just like "checked" in input fields we also have "selected" in select field it works in the same way
+    minLength and maxLength are self explanatory, step is used to increment the counter by that much value.
+
+    -->
+
+    
+</body>
+</html>

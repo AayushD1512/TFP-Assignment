@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Myeongjo&family=Orbitron:wght@400..900&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg, rgb(31, 15, 98), rgb(117, 177, 255));
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    font-family: "Lobster", serif;
+}
+h1{
+    font-family: "Nanum Myeongjo", serif;
+    
+}
+.card{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    justify-items: center;
+    width: 25vw;
+    margin-top: 100px;
+    position: relative;
+    
+    /* height: 35vh; */
+}
+span{
+    display: inline-block;
+    width: 100%;
+    margin-left: 25%;
+}
+.logo{
+    height: 75px;
+    width: 200px;
+    object-fit:contain;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 0.5rem;
+    
+}
+input{
+    border: 1px solid rgb(168, 160, 160);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+button>p{
+    display: inline;
+    margin: 0;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: larger;
+}
+button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(60, 35, 173);
+    color: white;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(94, 71, 197);
+}
+
+svg{
+    /* width:100vw; */
+    
+}

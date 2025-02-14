@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* :first-child - Selects the first child element */
+ul li:first-child {
+    background-color: #ffcccb; /* Light red */
+    font-weight: bold;
+}
+
+/* :last-child - Selects the last child element */
+ul li:last-child {
+    background-color: #add8e6; /* Light blue */
+    font-style: italic;
+}
+
+/* :nth-child - Selects the 3rd child element */
+ul li:nth-child(3) {
+    background-color: #90ee90; /* Light green */
+    color: #333;
+}
+
+/* :nth-last-child - Selects the 2nd last child element */
+ul li:nth-last-child(2) {
+    background-color: #ffb6c1; /* Light pink */
+    text-decoration: underline;
+}
+
+/* :only-child - Selects the element if it is the only child */
+div p:only-child {
+    background-color: #f0e68c; /* Khaki */
+    border: 2px solid #d2b48c;
+    padding: 15px;
+}
+
+/* :first-of-type - Selects the first element of its type */
+.type-example p:first-of-type {
+    background-color: #ffd700; /* Gold */
+    font-weight: bold;
+}
+
+/* :last-of-type - Selects the last element of its type */
+.type-example p:last-of-type {
+    background-color: #87ceeb; /* Sky blue */
+    font-style: italic;
+}
+
+/* :nth-of-type - Selects the 2nd paragraph */
+.nth-type-example p:nth-of-type(2) {
+    background-color: #98fb98; /* Pale green */
+    text-decoration: underline;
+}
+
+/* :nth-last-of-type - Selects the 2nd last paragraph */
+.nth-type-example p:nth-last-of-type(2) {
+    background-color: #ffa07a; /* Light salmon */
+    font-weight: bold;
+}
+
+/* :only-of-type - Selects the only paragraph in its parent */
+.only-of-type-example p:only-of-type {
+    background-color: #dda0dd; /* Plum */
+    border: 2px solid #8b008b;
+    padding: 15px;
+}

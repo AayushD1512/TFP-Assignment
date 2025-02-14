@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    margin: 26px;
+    background-color: blanchedalmond;
+    padding: 24px;
+}
+
+h3{
+    text-align: center;
+}
+ul, ol{
+    padding-left: 36px;
+}
+
+#Intro1 h3{   /* normal CSS Combinators --> Descendant parent comes first then child*/
+    color: blue;
+    line-height: 30px;
+    font-size: 24px;
+    border-left: 5px solid purple;
+}
+
+p{
+    padding: 5px 0px;
+}
+#Intro2 li{
+    line-height: 20px;
+    font-size: 18px;
+    border-left: 3px dashed black;
+}
+
+#Intro3>div>ol>li{ /* This is child combinators specified by --> ">" */
+    color: magenta;
+    /* text-align: center; */
+    list-style-type: lower-greek;
+
+}
+
+
+/* Here is Next Sibling*/
+
+/* All span that comes right after p and li combined will get following color */
+p+li+span{
+    color: rgba(217, 20, 201, 0.94);
+
+}
+
+/* All li that comes after p will get following propert */
+p+li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/*Here is the Subsequent Sliding Combinator*/
+/* Here it means that under subsequentsliding after h3 whatever p are there on same indentation level should get following properties */
+#subsequentsliding h3 ~ p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: magenta;
+}

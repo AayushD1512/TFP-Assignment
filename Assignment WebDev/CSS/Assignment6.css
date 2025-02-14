@@ -1,0 +1,116 @@
+*{
+    /* padding: 0px; */
+    margin: 0px;
+    /* background-color: #F7F8F9; */
+    
+}
+
+.form-container{
+    background-color: #FFFFFF;
+    height: 728px;
+    width: 520px;
+    padding-top: 20px;
+    /* border: 1px solid rgb(57, 54, 54); */
+    margin: 170px auto;
+    border-radius: 40px;
+    outline: 4px outset #4B5768;
+   
+}
+
+h1{
+    margin: 50px auto;
+    width: 50%;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Poppins';
+    margin: 0px -5px;
+}
+.input-fields{
+    height: 72px;
+    width: 360px;
+    margin: 0px auto 16px;
+   
+}
+
+label{
+    color: #4B5768;
+    margin: 8px; 
+    display: block; 
+    
+    
+}
+img{
+    color: black;
+    margin-left: 40px;
+}
+input{
+    padding: 7px;
+    background-color: #F7F8F9;
+    width: 360px;
+    height: 40px;
+    border: 0.5px solid #c9cbcd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+
+.signUp-button{
+    height: 48px;
+    width: 340px;
+    background-color: #10B981;
+    border-radius: 35px;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;    
+    line-height: 48px;
+}
+
+.signUp{
+    color: white;
+    font-size: 16px;
+    
+}
+
+.or{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 16px;
+    color: #64748B;
+    margin: 16px 0px;
+    margin-left: 46%;
+}
+
+.signIn{
+    background-color: #191D23;
+    height: 56px;
+    width: 340px;
+    border-radius: 35px;
+    margin: auto;
+    text-align: center;
+}
+
+.sign-in-child{
+    /* background-color: yellow; */
+    padding-top: 16px;
+    height: 10px;
+    margin-left: -20px;
+}
+
+
+img{
+ /* margin-top: 12px; */
+ vertical-align: middle;
+ margin-right: 10px;
+}
+
+.google-text{
+    color: white;
+    font-family: "Poppins";
+    font-size: 16px;
+    display: inline;
+    /* padding-bottom: 15px; */
+    
+}

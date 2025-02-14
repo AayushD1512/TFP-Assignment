@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Down Navbar</title>
+    <style>
+        .nav-container{
+            margin: 230px auto;
+            width: 90vw;
+        }
+        .nav3{
+            
+            background-color: rgb(103, 103, 245);
+            padding: 12px;
+            
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .dropdown-content{
+            display: none;
+            margin-left: -10px;
+            width: 100px;
+            padding: 8px;
+            /* margin-bottom: 15px; */
+           
+            /* padding: 10px; */
+        }
+        .dropdown-content>a{
+            margin-bottom: 5px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+            background-color: rgb(103, 103, 245);
+            
+        }
+        
+        .dropdown-content a:hover{
+            width: 100%;
+            text-align: center;
+            color: rgb(247, 68, 107);
+            background-color: rgb(14, 14, 97);
+        }
+    </style>
+</head>
+<body>
+    <h2>Variation 3: Navbar with dropdown menu</h2>
+    <div class="nav-container">
+        <div class="nav3">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Story</a>
+                        <a href="#">Team</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><button class="login-btn" type="submit">Login</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

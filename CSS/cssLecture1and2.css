@@ -1,0 +1,43 @@
+h2{
+    color: teal;
+}
+
+ol li{
+    color: blueviolet;
+}
+
+.fruit.same{
+    color: chartreuse;
+}
+
+.vegetable{
+    background-color: magenta;
+}
+
+#item1{
+    color: magenta;
+}
+
+/* Even if you write .same.fruit that wont make a difference because
+CSS understands that they are referring to class where both
+are present. But if you include a space in between them
+then it will not work becuase that caters to different classes 
+that have fruit and same. It is also called Compounding of
+selectors
+
+Tag Selector: ul li p etc.
+Class Selector: .className
+Id Selecto: #idName
+Universal Selector: *{} Changes every css color element
+
+Named Colors: aqua, blue etc.
+RGB color ranges from 0 to 255 (r,g,b) --> (0,0,0) -> (255,255,255)
+HexaDecimal ranegs from 0 to f --> (rr,gg,bb) --> (00,00,00) to (ff,ff,ff)
+
+
+Ques: I have given blueviolet color to ol li and fruit same to some green
+color why fruit same color has been given priority over ol li 
+color. (Specificity)
+
+
+*/
