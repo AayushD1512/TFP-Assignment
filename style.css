@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Irish+Grover&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f2f7fa;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+nav {
+    min-height: 16vh;
+    background-color: rgba(251, 170, 47, 0.8);
+    width: 60vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.25rem;
+    margin: 0.5rem auto;
+    
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+nav > h2 {
+    background-color: inherit;
+    color: white; /* Ensure text is visible */
+    padding: 0.5rem 1rem; /* Add some padding for better visibility */
+    text-align: center; /* Ensures text is centered within */
+    margin: 0; /*Remove default margin */
+    display: block; /* Ensures background wraps around text */
+    width: max-content;
+}
+
+h1{
+    color: #253c46;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vh;
+   
+    margin: 20px auto;
+    text-align: center;
+         
+}
+div{
+    margin: 20px auto;
+}
+
+.content-1,.content-2{
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    width: 40%;
+    align-items: center;
+    background-color: #3d5869;
+}
+
+.content{
+    display: flex;
+    padding: 1rem;
+    width: 80vw;
+    background-color: #fbaa2f;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: inherit;
+    width: 80%;
+    
+}
+li{
+    list-style-type: none;
+    padding: 1rem;
+    background-color: #3d5869;
+    border: 1px solid white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: white;
+        color: black;
+        scale: 1.06;
+    }
+
+    
+}
+
+h2{
+    padding: 0.65rem;
+    margin-bottom: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(251, 170, 47, 1);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}

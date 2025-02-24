@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-Areas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            margin-bottom: 10px;
+        }
+        .container{
+            background-color: white;
+            border:2px solid #333;
+            padding: 10px;
+        }
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            background-color: #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .box{
+            background-color: #3498db;
+            color:white;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+
+        }
+        .box:nth-child(even){
+            background-color: #e74c3c;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Grid Template Areas</h2>
+        <div class="grid-container"
+        style="
+            grid-template-areas: 
+            'header header header'
+            'sidebar main main'
+            'footer footer footer'
+            ;
+        "
+        >
+            <grid class="box"
+            style="grid-area:header"
+            >Header</grid>
+            <grid class="box"
+            style="grid-area:sidebar"
+            >Sidebar</grid>
+            <grid class="box"
+            style="grid-area:main"
+            >Main</grid>
+            <grid class="box"
+            style="grid-area:footer"
+            >Footer</grid>
+        </div>
+    </div>
+</body>
+</html>

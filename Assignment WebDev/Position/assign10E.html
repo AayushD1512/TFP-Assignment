@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10E</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+ 
+ 
+        body {
+            padding: 16px;
+            background-color: bisque;
+        }
+ 
+ 
+        h2 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+ 
+ 
+        .parent-container {
+            width: fit-content;
+            margin: auto;
+        }
+ 
+ 
+        .emoji-face {
+            position: relative;
+            background: linear-gradient(#FCF7C3, #EFE323, #F0EA0D);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            outline: 2px solid #E7B20D;
+            margin: 16px;
+        }
+ 
+ 
+        .eye-ball-circular {
+            position: absolute;
+            height: 14px;
+            width: 10px;
+            background: radial-gradient(#C3830D, #8E5F10);
+            border-radius: 50%;
+        }
+ 
+        .parent-container{
+            position: relative;
+        }
+        .eye-ball-circular.left {
+            position: absolute;
+            left: 24%;
+            top: 28%;
+        }
+ 
+ 
+        .eye-ball-circular.right {
+            position: relative;
+            left: 66%;
+            top: 28%;
+        }
+ 
+ 
+        .mouth {
+            background: radial-gradient(#C3830D, #8E5F10);
+        }
+ 
+ 
+        .mouth-flat {
+            height: 4px;
+            width: 32px;
+            left: 35%;
+            top: 70%;
+            border-radius: 8px;
+            position: absolute;
+        }
+ 
+ 
+        .mouth-round {
+            height: 16px;
+            width: 16px;
+            border-radius: 8px;
+            position: absolute;
+            left: 43%;
+            top: 64%;
+        }
+ 
+ 
+        .mouth-amazed {
+            height: 16px;
+            width: 32px;
+            border-radius: 8px;
+            position: absolute;
+            left: 35%;
+            top: 64%;
+        }
+ 
+ 
+        .mouth-worried {
+            height: 16px;
+            width: 32px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: absolute;
+            left: 35%;
+            top: 64%;
+        }
+ 
+ 
+        .looking-right .eye-ball-circular.left {
+            position: relative;
+            left: 35%;
+        }
+ 
+ 
+        .looking-right .eye-ball-circular.right {
+            position: relative;
+            left: 70%;
+            top: 15%;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div>
+        <h2>Make the PERFECT emojis</h2>
+        <div class="parent-container">
+            <div class="emoji-face">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-flat"></div>
+            </div>
+            <div class="emoji-face">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-round"></div>
+            </div>
+            <div class="emoji-face">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-amazed"></div>
+            </div>
+            <div class="emoji-face">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-worried"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="parent-container">
+            <div class="emoji-face looking-right">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-flat"></div>
+            </div>
+            <div class="emoji-face looking-right">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-round"></div>
+            </div>
+            <div class="emoji-face looking-right">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-amazed"></div>
+            </div>
+            <div class="emoji-face looking-right">
+                <div class="eye-ball-circular left"></div>
+                <div class="eye-ball-circular right"></div>
+                <div class="mouth mouth-worried"></div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>

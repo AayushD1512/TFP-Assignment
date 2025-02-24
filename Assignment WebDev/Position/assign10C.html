@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10C</title>
+    <link rel="stylesheet" href="./assign10C.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+ 
+ 
+        body {
+            padding: 16px;
+            background-color: bisque;
+           
+        }
+ 
+ 
+        h2 {
+            margin-bottom: 24px;
+        }
+ 
+ 
+        .parent {
+            height: 70vh;
+            width: 40vw;
+            background-color: yellow;
+            margin-bottom: 50px;
+        }
+ 
+ 
+        .long {
+            background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.481), rgba(0, 128, 0, 0.588), rgba(0, 0, 255, 0.635));
+            height: 150vh;
+            margin-bottom: 100vh;
+            padding: 24px;
+        }
+ 
+ 
+        .child-type-1 {
+            background-color: rgba(126, 242, 94, 0.7);
+            height: 60px;
+            width: 60px;
+        }
+ 
+ 
+        .child-type-2 {
+            background-color: rgba(70, 110, 221, 0.7);
+            height: 80px;
+            width: 80px;
+        }
+ 
+ 
+        .child-type-3 {
+            background-color: rgb(144, 241, 96);
+            height: 400px;
+            width: 200px;
+            padding: 24px;
+        }
+    </style>
+ 
+</head>
+<body>
+    <h2>Assignment on position fixed & sticky</h2>
+
+
+       <div class='parent'>
+           <div class="child-type-1 c1">C1</div>
+           <div class="child-type-2 c2">C2</div>
+       </div>
+       <div class='parent'>
+           <div class="child-type-1 c3">C3</div>
+       </div>
+       <div class='parent'>
+           <div class="child-type-1 c3">C3</div>
+       </div>
+       <div class='parent long'>
+           <div class="child-type-3 c4">C4
+               <div class="child-type-2 c5">C5</div>
+           </div>
+       </div>
+
+</body>
+</html>

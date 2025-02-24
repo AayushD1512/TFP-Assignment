@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10A</title>
+    <link rel="stylesheet" href="assignment10A.css".css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+ 
+ 
+        body {
+            padding: 16px;
+            background-color: bisque;
+        }
+ 
+ 
+        h2 {
+            margin-bottom: 24px;
+        }
+ 
+ 
+        .parent {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            margin-bottom: 50px;
+        }
+ 
+ 
+        .child-type-1 {
+            background-color: rgba(126, 242, 94, 0.7);
+            height: 60px;
+            width: 60px;
+        }
+ 
+ 
+        .child-type-2 {
+            background-color: rgba(70, 110, 221, 0.7);
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div>
+        <h2>Assignment on position relative</h2>
+        <div class='parent'>
+            <div class="child-type-1 c1">C1</div>
+            <div class="child-type-2 c2">C2</div>
+        </div>
+        <div class='parent'>
+            <div class="child-type-1 c3">C3</div>
+            <div class="child-type-2 c4">C4</div>
+        </div>
+        <p>Use position relative on child</p>
+        <div class='parent'>
+            <div class="child-type-1 c5">C5</div>
+            <div class="child-type-2 c6">C6</div>
+        </div>
+        <p>Use position relative on child, with z-index</p>
+        <div class='parent'>
+            <div class="child-type-1 c7">C7</div>
+            <div class="child-type-2 c8">C8</div>
+        </div>
+    </div>
+ 
+</body>
+</html>
