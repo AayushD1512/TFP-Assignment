@@ -19,7 +19,8 @@
     padding: 0.6rem;
     overflow:scroll;
     height: fit-content;
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 label{
     width: 70px;
@@ -85,8 +86,9 @@ p{
 }
 
 @media (max-width: 768px){
-    input{
+    body form{
         display: none;
+        
     }
 
     .menu-container{
@@ -94,8 +96,12 @@ p{
     }
 
     .new-menu-mobile{
-        visibility: visible;
+         /* visibility: visible; */
+    
+         display: flex;
     }
+
+
     .main{
         grid-template-columns: 100vw;
     }
