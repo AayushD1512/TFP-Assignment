@@ -1,0 +1,24 @@
+.form {
+  background-color: #f0f;
+  border: 1px solid #00008b;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+.form-item {
+  gap: .5rem;
+  margin: 1rem 0;
+  display: flex;
+}
+
+section {
+  background-color: #8fbc8f;
+  border: 1px solid #00008b;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+/*# sourceMappingURL=Part3.3a01df49.css.map */

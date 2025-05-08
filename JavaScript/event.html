@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="./event.css">
+    
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <div>
+            <label for="usr">Username</label><br>
+            <input  id="usr" type="text" placeholder="Username pls" minlength="3" onchange="handleUsername(event)">
+        </div>
+        
+        <div>
+            <label for="pas">Password</label><br>
+            <input  id="pas" type="password" placeholder="Password pls" onchange="handlePass(event)" >
+        </div>
+        
+        <div>
+            <label for="eml">Email</label><br>
+            <input  id="eml" type="email" placeholder="Email pls" onchange="handleEmail(event)">
+        </div>
+        <button type="submit">Submit</button>
+        <p id="hello-text"></p>
+        
+    </form>
+    <div class="show-text">
+        <h2 id="t1"></h2>
+        <h4 id="t2"></h4>
+        <h4 id="t3"></h4>
+        <button class="btn" onclick="handleBack(event)">Edit</button>
+    </div>
+    <script src="./event.js"></script>
+</body>
+</html>

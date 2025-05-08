@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./one.css">
+</head>
+<body>
+    <div class="main">
+
+   
+    <h2>Registration Form</h2>
+    <form onsubmit="handleFormSubmit(event)">
+        <div class="form-content">
+            <label for="usr">Username</label><br>
+            <input type="text" id="usr" name="username" placeholder="Username" onchange="handleUsername(event)">
+        </div>
+        <div class="form-content">
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" name="password" placeholder="Password" onchange="handlePassword(event)">
+        </div>
+        <div class="form-content">
+            <label for="eml">Email</label><br>
+            <input type="email" id="eml" name="email" placeholder="Email ID" onchange="handleEmail(event)">
+        </div>
+        
+            <button 
+            >Submit</button>
+            <!-- onclick="handleClickSubmit(event)" -->
+        
+    </form>
+
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>User Detail</h2>
+            <h3 id="userName"></h3>
+            <h3 id="passWord"></h3>
+            <h3 id="email"></h3>
+            
+                <button onclick="handleEdit(event)">Edit</button>
+            
+        </div>
+    </div>
+    <script src="./one.js"></script>
+</body>
+</html>
